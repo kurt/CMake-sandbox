@@ -5,3 +5,4 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 add_test(FunctionCall "FunctionCallExe")
+add_test(PurposefulFail "TestFailExe")

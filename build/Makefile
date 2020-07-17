@@ -160,6 +160,19 @@ FunctionCallExe/fast:
 	$(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/build
 .PHONY : FunctionCallExe/fast
 
+#=============================================================================
+# Target rules for targets named TestFailExe
+
+# Build rule for target.
+TestFailExe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestFailExe
+.PHONY : TestFailExe
+
+# fast build rule for target.
+TestFailExe/fast:
+	$(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/build
+.PHONY : TestFailExe/fast
+
 Functions.o: Functions.cpp.o
 
 .PHONY : Functions.o
@@ -226,6 +239,7 @@ help:
 	@echo "... Functions-Library"
 	@echo "... run-main"
 	@echo "... FunctionCallExe"
+	@echo "... TestFailExe"
 	@echo "... Functions.o"
 	@echo "... Functions.i"
 	@echo "... Functions.s"

@@ -5,5 +5,6 @@
 /home/username/repos/cmake-sandbox/build/CMakeFiles/run-main.dir
 /home/username/repos/cmake-sandbox/build/tests/CMakeFiles/edit_cache.dir
 /home/username/repos/cmake-sandbox/build/tests/CMakeFiles/test.dir
-/home/username/repos/cmake-sandbox/build/tests/CMakeFiles/FunctionCallExe.dir
 /home/username/repos/cmake-sandbox/build/tests/CMakeFiles/rebuild_cache.dir
+/home/username/repos/cmake-sandbox/build/tests/CMakeFiles/FunctionCallExe.dir
+/home/username/repos/cmake-sandbox/build/tests/CMakeFiles/TestFailExe.dir

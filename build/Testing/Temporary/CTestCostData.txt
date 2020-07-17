@@ -1,2 +1,4 @@
-FunctionCall 2 0.000766993
+FunctionCall 4 0.000479758
+PurposefulFail 0 0
 ---
+PurposefulFail

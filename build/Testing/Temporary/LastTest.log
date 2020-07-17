@@ -1,10 +1,10 @@
-Start testing: Jul 17 12:28 PDT
+Start testing: Jul 17 12:38 PDT
 ----------------------------------------------------------
-1/1 Testing: FunctionCall
-1/1 Test: FunctionCall
+1/2 Testing: FunctionCall
+1/2 Test: FunctionCall
 Command: "/home/username/repos/cmake-sandbox/build/tests/FunctionCallExe"
 Directory: /home/username/repos/cmake-sandbox/build/tests
-"FunctionCall" start time: Jul 17 12:28 PDT
+"FunctionCall" start time: Jul 17 12:38 PDT
 Output:
 ----------------------------------------------------------
 Hello World!
@@ -13,8 +13,23 @@ Test has run
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"FunctionCall" end time: Jul 17 12:28 PDT
+"FunctionCall" end time: Jul 17 12:38 PDT
 "FunctionCall" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 17 12:28 PDT
+2/2 Testing: PurposefulFail
+2/2 Test: PurposefulFail
+Command: "/home/username/repos/cmake-sandbox/build/tests/TestFailExe"
+Directory: /home/username/repos/cmake-sandbox/build/tests
+"PurposefulFail" start time: Jul 17 12:38 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"PurposefulFail" end time: Jul 17 12:38 PDT
+"PurposefulFail" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 17 12:38 PDT

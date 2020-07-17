@@ -136,6 +136,48 @@ FunctionCallExe/fast:
 	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/build
 .PHONY : FunctionCallExe/fast
 
+# Convenience name for target.
+tests/CMakeFiles/TestFailExe.dir/rule:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/TestFailExe.dir/rule
+.PHONY : tests/CMakeFiles/TestFailExe.dir/rule
+
+# Convenience name for target.
+TestFailExe: tests/CMakeFiles/TestFailExe.dir/rule
+
+.PHONY : TestFailExe
+
+# fast build rule for target.
+TestFailExe/fast:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/build
+.PHONY : TestFailExe/fast
+
+test_Failure.o: test_Failure.cpp.o
+
+.PHONY : test_Failure.o
+
+# target to build an object file
+test_Failure.cpp.o:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/test_Failure.cpp.o
+.PHONY : test_Failure.cpp.o
+
+test_Failure.i: test_Failure.cpp.i
+
+.PHONY : test_Failure.i
+
+# target to preprocess a source file
+test_Failure.cpp.i:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/test_Failure.cpp.i
+.PHONY : test_Failure.cpp.i
+
+test_Failure.s: test_Failure.cpp.s
+
+.PHONY : test_Failure.s
+
+# target to generate assembly for a file
+test_Failure.cpp.s:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/test_Failure.cpp.s
+.PHONY : test_Failure.cpp.s
+
 test_FunctionCall.o: test_FunctionCall.cpp.o
 
 .PHONY : test_FunctionCall.o
@@ -171,8 +213,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... FunctionCallExe"
 	@echo "... rebuild_cache"
+	@echo "... FunctionCallExe"
+	@echo "... TestFailExe"
+	@echo "... test_Failure.o"
+	@echo "... test_Failure.i"
+	@echo "... test_Failure.s"
 	@echo "... test_FunctionCall.o"
 	@echo "... test_FunctionCall.i"
 	@echo "... test_FunctionCall.s"
