@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/username/repos/cmake-sandbox/build
 CMakeFiles/Functions-Library.dir/all:
 	$(MAKE) -f CMakeFiles/Functions-Library.dir/build.make CMakeFiles/Functions-Library.dir/depend
 	$(MAKE) -f CMakeFiles/Functions-Library.dir/build.make CMakeFiles/Functions-Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=1,2 "Built target Functions-Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=3,4 "Built target Functions-Library"
 .PHONY : CMakeFiles/Functions-Library.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/Functions-Library.dir/clean
 CMakeFiles/run-main.dir/all: CMakeFiles/Functions-Library.dir/all
 	$(MAKE) -f CMakeFiles/run-main.dir/build.make CMakeFiles/run-main.dir/depend
 	$(MAKE) -f CMakeFiles/run-main.dir/build.make CMakeFiles/run-main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=3,4 "Built target run-main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=5,6 "Built target run-main"
 .PHONY : CMakeFiles/run-main.dir/all
 
 # Include target in all.
@@ -130,6 +130,61 @@ CMakeFiles/run-main.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/run-main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory tests
+
+# Convenience name for "all" pass in the directory.
+tests/all: tests/CMakeFiles/FunctionCallExe.dir/all
+
+.PHONY : tests/all
+
+# Convenience name for "clean" pass in the directory.
+tests/clean: tests/CMakeFiles/FunctionCallExe.dir/clean
+
+.PHONY : tests/clean
+
+# Convenience name for "preinstall" pass in the directory.
+tests/preinstall:
+
+.PHONY : tests/preinstall
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/FunctionCallExe.dir
+
+# All Build rule for target.
+tests/CMakeFiles/FunctionCallExe.dir/all: CMakeFiles/Functions-Library.dir/all
+	$(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/depend
+	$(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=1,2 "Built target FunctionCallExe"
+.PHONY : tests/CMakeFiles/FunctionCallExe.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/FunctionCallExe.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/FunctionCallExe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/username/repos/cmake-sandbox/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/FunctionCallExe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/username/repos/cmake-sandbox/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/FunctionCallExe.dir/rule
+
+# Convenience name for target.
+FunctionCallExe: tests/CMakeFiles/FunctionCallExe.dir/rule
+
+.PHONY : FunctionCallExe
+
+# clean rule for target.
+tests/CMakeFiles/FunctionCallExe.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/clean
+.PHONY : tests/CMakeFiles/FunctionCallExe.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/FunctionCallExe.dir/clean
 
 .PHONY : clean
 

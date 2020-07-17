@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5.1)
 project(cmake-sandbox)
-
+enable_testing()
 add_library(Functions-Library
             Functions.cpp
             Header.hpp
@@ -9,3 +9,4 @@ add_library(Functions-Library
 add_executable(run-main Main.cpp)
 target_link_libraries(run-main PRIVATE Functions-Library)
 
+add_subdirectory(tests)

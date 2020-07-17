@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/username/repos/cmake-sandbox/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -136,6 +147,19 @@ run-main/fast:
 	$(MAKE) -f CMakeFiles/run-main.dir/build.make CMakeFiles/run-main.dir/build
 .PHONY : run-main/fast
 
+#=============================================================================
+# Target rules for targets named FunctionCallExe
+
+# Build rule for target.
+FunctionCallExe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FunctionCallExe
+.PHONY : FunctionCallExe
+
+# fast build rule for target.
+FunctionCallExe/fast:
+	$(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/build
+.PHONY : FunctionCallExe/fast
+
 Functions.o: Functions.cpp.o
 
 .PHONY : Functions.o
@@ -196,10 +220,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Functions-Library"
 	@echo "... run-main"
+	@echo "... FunctionCallExe"
 	@echo "... Functions.o"
 	@echo "... Functions.i"
 	@echo "... Functions.s"

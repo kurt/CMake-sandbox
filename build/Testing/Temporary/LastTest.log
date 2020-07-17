@@ -1,0 +1,20 @@
+Start testing: Jul 17 12:28 PDT
+----------------------------------------------------------
+1/1 Testing: FunctionCall
+1/1 Test: FunctionCall
+Command: "/home/username/repos/cmake-sandbox/build/tests/FunctionCallExe"
+Directory: /home/username/repos/cmake-sandbox/build/tests
+"FunctionCall" start time: Jul 17 12:28 PDT
+Output:
+----------------------------------------------------------
+Hello World!
+Test has run
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FunctionCall" end time: Jul 17 12:28 PDT
+"FunctionCall" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 17 12:28 PDT
