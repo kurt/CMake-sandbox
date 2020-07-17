@@ -67,17 +67,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -88,6 +77,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+tests/CMakeFiles/TestFailExe.dir/rule:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/TestFailExe.dir/rule
+.PHONY : tests/CMakeFiles/TestFailExe.dir/rule
+
+# Convenience name for target.
+TestFailExe: tests/CMakeFiles/TestFailExe.dir/rule
+
+.PHONY : TestFailExe
+
+# fast build rule for target.
+TestFailExe/fast:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/build
+.PHONY : TestFailExe/fast
+
+# Convenience name for target.
 tests/CMakeFiles/FunctionCallExe.dir/rule:
 	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/FunctionCallExe.dir/rule
 .PHONY : tests/CMakeFiles/FunctionCallExe.dir/rule
@@ -137,19 +152,46 @@ FunctionCallExe/fast:
 .PHONY : FunctionCallExe/fast
 
 # Convenience name for target.
-tests/CMakeFiles/TestFailExe.dir/rule:
-	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/TestFailExe.dir/rule
-.PHONY : tests/CMakeFiles/TestFailExe.dir/rule
+tests/CMakeFiles/TestAssertExe.dir/rule:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/TestAssertExe.dir/rule
+.PHONY : tests/CMakeFiles/TestAssertExe.dir/rule
 
 # Convenience name for target.
-TestFailExe: tests/CMakeFiles/TestFailExe.dir/rule
+TestAssertExe: tests/CMakeFiles/TestAssertExe.dir/rule
 
-.PHONY : TestFailExe
+.PHONY : TestAssertExe
 
 # fast build rule for target.
-TestFailExe/fast:
-	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/build
-.PHONY : TestFailExe/fast
+TestAssertExe/fast:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/build
+.PHONY : TestAssertExe/fast
+
+test_Assert.o: test_Assert.cpp.o
+
+.PHONY : test_Assert.o
+
+# target to build an object file
+test_Assert.cpp.o:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/test_Assert.cpp.o
+.PHONY : test_Assert.cpp.o
+
+test_Assert.i: test_Assert.cpp.i
+
+.PHONY : test_Assert.i
+
+# target to preprocess a source file
+test_Assert.cpp.i:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/test_Assert.cpp.i
+.PHONY : test_Assert.cpp.i
+
+test_Assert.s: test_Assert.cpp.s
+
+.PHONY : test_Assert.s
+
+# target to generate assembly for a file
+test_Assert.cpp.s:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/test_Assert.cpp.s
+.PHONY : test_Assert.cpp.s
 
 test_Failure.o: test_Failure.cpp.o
 
@@ -212,10 +254,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... rebuild_cache"
-	@echo "... FunctionCallExe"
 	@echo "... TestFailExe"
+	@echo "... FunctionCallExe"
+	@echo "... rebuild_cache"
+	@echo "... TestAssertExe"
+	@echo "... test"
+	@echo "... test_Assert.o"
+	@echo "... test_Assert.i"
+	@echo "... test_Assert.s"
 	@echo "... test_Failure.o"
 	@echo "... test_Failure.i"
 	@echo "... test_Failure.s"

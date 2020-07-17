@@ -1,10 +1,10 @@
-Start testing: Jul 17 12:38 PDT
+Start testing: Jul 17 15:30 PDT
 ----------------------------------------------------------
-1/2 Testing: FunctionCall
-1/2 Test: FunctionCall
+1/3 Testing: FunctionCall
+1/3 Test: FunctionCall
 Command: "/home/username/repos/cmake-sandbox/build/tests/FunctionCallExe"
 Directory: /home/username/repos/cmake-sandbox/build/tests
-"FunctionCall" start time: Jul 17 12:38 PDT
+"FunctionCall" start time: Jul 17 15:30 PDT
 Output:
 ----------------------------------------------------------
 Hello World!
@@ -13,23 +13,39 @@ Test has run
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"FunctionCall" end time: Jul 17 12:38 PDT
+"FunctionCall" end time: Jul 17 15:30 PDT
 "FunctionCall" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: PurposefulFail
-2/2 Test: PurposefulFail
+2/3 Testing: PurposefulFail
+2/3 Test: PurposefulFail
 Command: "/home/username/repos/cmake-sandbox/build/tests/TestFailExe"
 Directory: /home/username/repos/cmake-sandbox/build/tests
-"PurposefulFail" start time: Jul 17 12:38 PDT
+"PurposefulFail" start time: Jul 17 15:30 PDT
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"PurposefulFail" end time: Jul 17 12:38 PDT
+"PurposefulFail" end time: Jul 17 15:30 PDT
 "PurposefulFail" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 17 12:38 PDT
+3/3 Testing: AssertTest
+3/3 Test: AssertTest
+Command: "/home/username/repos/cmake-sandbox/build/tests/TestAssertExe"
+Directory: /home/username/repos/cmake-sandbox/build/tests
+"AssertTest" start time: Jul 17 15:30 PDT
+Output:
+----------------------------------------------------------
+TestAssertExe: /home/username/repos/cmake-sandbox/tests/test_Assert.cpp:5: int main(): Assertion `2==1' failed.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Failed.
+"AssertTest" end time: Jul 17 15:30 PDT
+"AssertTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 17 15:30 PDT

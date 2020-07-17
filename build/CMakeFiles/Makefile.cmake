@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Functions-Library.dir/DependInfo.cmake"
   "CMakeFiles/run-main.dir/DependInfo.cmake"
-  "tests/CMakeFiles/FunctionCallExe.dir/DependInfo.cmake"
   "tests/CMakeFiles/TestFailExe.dir/DependInfo.cmake"
+  "tests/CMakeFiles/FunctionCallExe.dir/DependInfo.cmake"
+  "tests/CMakeFiles/TestAssertExe.dir/DependInfo.cmake"
   )

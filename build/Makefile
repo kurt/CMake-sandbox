@@ -148,6 +148,19 @@ run-main/fast:
 .PHONY : run-main/fast
 
 #=============================================================================
+# Target rules for targets named TestFailExe
+
+# Build rule for target.
+TestFailExe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestFailExe
+.PHONY : TestFailExe
+
+# fast build rule for target.
+TestFailExe/fast:
+	$(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/build
+.PHONY : TestFailExe/fast
+
+#=============================================================================
 # Target rules for targets named FunctionCallExe
 
 # Build rule for target.
@@ -161,17 +174,17 @@ FunctionCallExe/fast:
 .PHONY : FunctionCallExe/fast
 
 #=============================================================================
-# Target rules for targets named TestFailExe
+# Target rules for targets named TestAssertExe
 
 # Build rule for target.
-TestFailExe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestFailExe
-.PHONY : TestFailExe
+TestAssertExe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestAssertExe
+.PHONY : TestAssertExe
 
 # fast build rule for target.
-TestFailExe/fast:
-	$(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/build
-.PHONY : TestFailExe/fast
+TestAssertExe/fast:
+	$(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/build
+.PHONY : TestAssertExe/fast
 
 Functions.o: Functions.cpp.o
 
@@ -238,8 +251,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... Functions-Library"
 	@echo "... run-main"
-	@echo "... FunctionCallExe"
 	@echo "... TestFailExe"
+	@echo "... FunctionCallExe"
+	@echo "... TestAssertExe"
 	@echo "... Functions.o"
 	@echo "... Functions.i"
 	@echo "... Functions.s"
