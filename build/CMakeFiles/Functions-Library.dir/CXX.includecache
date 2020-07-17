@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/username/repos/cmake-sandbox/Functions.cpp
+Header.hpp
+/home/username/repos/cmake-sandbox/Header.hpp
+
+/home/username/repos/cmake-sandbox/Header.hpp
+iostream
+-
+

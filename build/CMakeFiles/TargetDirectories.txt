@@ -1,0 +1,4 @@
+/home/username/repos/cmake-sandbox/build/CMakeFiles/rebuild_cache.dir
+/home/username/repos/cmake-sandbox/build/CMakeFiles/edit_cache.dir
+/home/username/repos/cmake-sandbox/build/CMakeFiles/Functions-Library.dir
+/home/username/repos/cmake-sandbox/build/CMakeFiles/run-main.dir

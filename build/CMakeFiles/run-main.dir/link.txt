@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/run-main.dir/Main.cpp.o  -o run-main libFunctions-Library.a 
