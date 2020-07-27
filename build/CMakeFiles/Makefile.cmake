@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../Sub_Dir1/CMakeLists.txt"
+  "../Sub_Dir2/CMakeLists.txt"
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
@@ -39,6 +41,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Sub_Dir1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Sub_Dir2/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -48,4 +52,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/TestFailExe.dir/DependInfo.cmake"
   "tests/CMakeFiles/FunctionCallExe.dir/DependInfo.cmake"
   "tests/CMakeFiles/TestAssertExe.dir/DependInfo.cmake"
+  "Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/DependInfo.cmake"
+  "Sub_Dir2/CMakeFiles/RunFunctions.dir/DependInfo.cmake"
   )

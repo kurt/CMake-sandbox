@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/TestFailExe.dir/test_Failure.cpp.o  -o TestFailExe 
+/usr/bin/c++   -g -O3 -Wall -fprofile-arcs -ftest-coverage   CMakeFiles/TestFailExe.dir/test_Failure.cpp.o  -o TestFailExe 

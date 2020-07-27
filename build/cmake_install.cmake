@@ -35,6 +35,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/username/repos/cmake-sandbox/build/tests/cmake_install.cmake")
+  include("/home/username/repos/cmake-sandbox/build/Sub_Dir1/cmake_install.cmake")
+  include("/home/username/repos/cmake-sandbox/build/Sub_Dir2/cmake_install.cmake")
 
 endif()
 

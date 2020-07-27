@@ -186,6 +186,32 @@ TestAssertExe/fast:
 	$(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/build
 .PHONY : TestAssertExe/fast
 
+#=============================================================================
+# Target rules for targets named Sub_Dir1Lib
+
+# Build rule for target.
+Sub_Dir1Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Sub_Dir1Lib
+.PHONY : Sub_Dir1Lib
+
+# fast build rule for target.
+Sub_Dir1Lib/fast:
+	$(MAKE) -f Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/build.make Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/build
+.PHONY : Sub_Dir1Lib/fast
+
+#=============================================================================
+# Target rules for targets named RunFunctions
+
+# Build rule for target.
+RunFunctions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RunFunctions
+.PHONY : RunFunctions
+
+# fast build rule for target.
+RunFunctions/fast:
+	$(MAKE) -f Sub_Dir2/CMakeFiles/RunFunctions.dir/build.make Sub_Dir2/CMakeFiles/RunFunctions.dir/build
+.PHONY : RunFunctions/fast
+
 Functions.o: Functions.cpp.o
 
 .PHONY : Functions.o
@@ -254,6 +280,8 @@ help:
 	@echo "... TestFailExe"
 	@echo "... FunctionCallExe"
 	@echo "... TestAssertExe"
+	@echo "... Sub_Dir1Lib"
+	@echo "... RunFunctions"
 	@echo "... Functions.o"
 	@echo "... Functions.i"
 	@echo "... Functions.s"

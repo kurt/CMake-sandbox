@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/run-main.dir/Main.cpp.o  -o run-main libFunctions-Library.a 
+/usr/bin/c++   -g -O3 -Wall -fprofile-arcs -ftest-coverage   CMakeFiles/run-main.dir/Main.cpp.o  -o run-main libFunctions-Library.a 

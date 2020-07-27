@@ -9,3 +9,11 @@
 /home/username/repos/cmake-sandbox/build/tests/CMakeFiles/rebuild_cache.dir
 /home/username/repos/cmake-sandbox/build/tests/CMakeFiles/TestAssertExe.dir
 /home/username/repos/cmake-sandbox/build/tests/CMakeFiles/test.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir1/CMakeFiles/edit_cache.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir1/CMakeFiles/test.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir1/CMakeFiles/rebuild_cache.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir2/CMakeFiles/test.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir2/CMakeFiles/edit_cache.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir2/CMakeFiles/RunFunctions.dir
+/home/username/repos/cmake-sandbox/build/Sub_Dir2/CMakeFiles/rebuild_cache.dir

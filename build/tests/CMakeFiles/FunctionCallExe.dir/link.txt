@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/FunctionCallExe.dir/test_FunctionCall.cpp.o  -o FunctionCallExe ../libFunctions-Library.a 
+/usr/bin/c++   -g -O3 -Wall -fprofile-arcs -ftest-coverage   CMakeFiles/FunctionCallExe.dir/test_FunctionCall.cpp.o  -o FunctionCallExe ../libFunctions-Library.a 

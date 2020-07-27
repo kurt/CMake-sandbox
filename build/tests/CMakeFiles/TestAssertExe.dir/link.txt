@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/TestAssertExe.dir/test_Assert.cpp.o  -o TestAssertExe 
+/usr/bin/c++   -g -O3 -Wall -fprofile-arcs -ftest-coverage   CMakeFiles/TestAssertExe.dir/test_Assert.cpp.o  -o TestAssertExe 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -g -O3 -Wall -fprofile-arcs -ftest-coverage  -shared -Wl,-soname,libSub_Dir1Lib.so -o libSub_Dir1Lib.so CMakeFiles/Sub_Dir1Lib.dir/Some_Functions.cpp.o 
