@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/username/repos/cmake-sandbox/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,17 +88,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -152,6 +152,21 @@ FunctionCallExe/fast:
 .PHONY : FunctionCallExe/fast
 
 # Convenience name for target.
+tests/CMakeFiles/BoostTestsExe.dir/rule:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/BoostTestsExe.dir/rule
+.PHONY : tests/CMakeFiles/BoostTestsExe.dir/rule
+
+# Convenience name for target.
+BoostTestsExe: tests/CMakeFiles/BoostTestsExe.dir/rule
+
+.PHONY : BoostTestsExe
+
+# fast build rule for target.
+BoostTestsExe/fast:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/build
+.PHONY : BoostTestsExe/fast
+
+# Convenience name for target.
 tests/CMakeFiles/TestAssertExe.dir/rule:
 	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/TestAssertExe.dir/rule
 .PHONY : tests/CMakeFiles/TestAssertExe.dir/rule
@@ -165,6 +180,33 @@ TestAssertExe: tests/CMakeFiles/TestAssertExe.dir/rule
 TestAssertExe/fast:
 	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/build
 .PHONY : TestAssertExe/fast
+
+boost_tests.o: boost_tests.cpp.o
+
+.PHONY : boost_tests.o
+
+# target to build an object file
+boost_tests.cpp.o:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/boost_tests.cpp.o
+.PHONY : boost_tests.cpp.o
+
+boost_tests.i: boost_tests.cpp.i
+
+.PHONY : boost_tests.i
+
+# target to preprocess a source file
+boost_tests.cpp.i:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/boost_tests.cpp.i
+.PHONY : boost_tests.cpp.i
+
+boost_tests.s: boost_tests.cpp.s
+
+.PHONY : boost_tests.s
+
+# target to generate assembly for a file
+boost_tests.cpp.s:
+	cd /home/username/repos/cmake-sandbox/build && $(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/boost_tests.cpp.s
+.PHONY : boost_tests.cpp.s
 
 test_Assert.o: test_Assert.cpp.o
 
@@ -253,12 +295,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... TestFailExe"
 	@echo "... FunctionCallExe"
+	@echo "... edit_cache"
+	@echo "... BoostTestsExe"
 	@echo "... rebuild_cache"
 	@echo "... TestAssertExe"
-	@echo "... test"
+	@echo "... boost_tests.o"
+	@echo "... boost_tests.i"
+	@echo "... boost_tests.s"
 	@echo "... test_Assert.o"
 	@echo "... test_Assert.i"
 	@echo "... test_Assert.s"

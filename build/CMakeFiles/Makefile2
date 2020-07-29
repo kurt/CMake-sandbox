@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/username/repos/cmake-sandbox/build
 CMakeFiles/Functions-Library.dir/all:
 	$(MAKE) -f CMakeFiles/Functions-Library.dir/build.make CMakeFiles/Functions-Library.dir/depend
 	$(MAKE) -f CMakeFiles/Functions-Library.dir/build.make CMakeFiles/Functions-Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=3,4 "Built target Functions-Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=5,6 "Built target Functions-Library"
 .PHONY : CMakeFiles/Functions-Library.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/Functions-Library.dir/clean
 CMakeFiles/run-main.dir/all: CMakeFiles/Functions-Library.dir/all
 	$(MAKE) -f CMakeFiles/run-main.dir/build.make CMakeFiles/run-main.dir/depend
 	$(MAKE) -f CMakeFiles/run-main.dir/build.make CMakeFiles/run-main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=13,14 "Built target run-main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=15,16 "Built target run-main"
 .PHONY : CMakeFiles/run-main.dir/all
 
 # Include target in all.
@@ -139,6 +139,7 @@ clean: CMakeFiles/run-main.dir/clean
 # Convenience name for "all" pass in the directory.
 tests/all: tests/CMakeFiles/TestFailExe.dir/all
 tests/all: tests/CMakeFiles/FunctionCallExe.dir/all
+tests/all: tests/CMakeFiles/BoostTestsExe.dir/all
 tests/all: tests/CMakeFiles/TestAssertExe.dir/all
 
 .PHONY : tests/all
@@ -146,6 +147,7 @@ tests/all: tests/CMakeFiles/TestAssertExe.dir/all
 # Convenience name for "clean" pass in the directory.
 tests/clean: tests/CMakeFiles/TestFailExe.dir/clean
 tests/clean: tests/CMakeFiles/FunctionCallExe.dir/clean
+tests/clean: tests/CMakeFiles/BoostTestsExe.dir/clean
 tests/clean: tests/CMakeFiles/TestAssertExe.dir/clean
 
 .PHONY : tests/clean
@@ -162,7 +164,7 @@ tests/preinstall:
 tests/CMakeFiles/TestFailExe.dir/all:
 	$(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/depend
 	$(MAKE) -f tests/CMakeFiles/TestFailExe.dir/build.make tests/CMakeFiles/TestFailExe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=11,12 "Built target TestFailExe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=13,14 "Built target TestFailExe"
 .PHONY : tests/CMakeFiles/TestFailExe.dir/all
 
 # Include target in all.
@@ -199,7 +201,7 @@ clean: tests/CMakeFiles/TestFailExe.dir/clean
 tests/CMakeFiles/FunctionCallExe.dir/all: CMakeFiles/Functions-Library.dir/all
 	$(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/depend
 	$(MAKE) -f tests/CMakeFiles/FunctionCallExe.dir/build.make tests/CMakeFiles/FunctionCallExe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=1,2 "Built target FunctionCallExe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=3,4 "Built target FunctionCallExe"
 .PHONY : tests/CMakeFiles/FunctionCallExe.dir/all
 
 # Include target in all.
@@ -230,13 +232,50 @@ clean: tests/CMakeFiles/FunctionCallExe.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target tests/CMakeFiles/BoostTestsExe.dir
+
+# All Build rule for target.
+tests/CMakeFiles/BoostTestsExe.dir/all: CMakeFiles/Functions-Library.dir/all
+	$(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/depend
+	$(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=1,2 "Built target BoostTestsExe"
+.PHONY : tests/CMakeFiles/BoostTestsExe.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/BoostTestsExe.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/BoostTestsExe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/username/repos/cmake-sandbox/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/BoostTestsExe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/username/repos/cmake-sandbox/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/BoostTestsExe.dir/rule
+
+# Convenience name for target.
+BoostTestsExe: tests/CMakeFiles/BoostTestsExe.dir/rule
+
+.PHONY : BoostTestsExe
+
+# clean rule for target.
+tests/CMakeFiles/BoostTestsExe.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/clean
+.PHONY : tests/CMakeFiles/BoostTestsExe.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/BoostTestsExe.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target tests/CMakeFiles/TestAssertExe.dir
 
 # All Build rule for target.
 tests/CMakeFiles/TestAssertExe.dir/all:
 	$(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/depend
 	$(MAKE) -f tests/CMakeFiles/TestAssertExe.dir/build.make tests/CMakeFiles/TestAssertExe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=9,10 "Built target TestAssertExe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=11,12 "Built target TestAssertExe"
 .PHONY : tests/CMakeFiles/TestAssertExe.dir/all
 
 # Include target in all.
@@ -291,7 +330,7 @@ Sub_Dir1/preinstall:
 Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/all:
 	$(MAKE) -f Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/build.make Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/depend
 	$(MAKE) -f Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/build.make Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=7,8 "Built target Sub_Dir1Lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=9,10 "Built target Sub_Dir1Lib"
 .PHONY : Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/all
 
 # Include target in all.
@@ -346,7 +385,7 @@ Sub_Dir2/preinstall:
 Sub_Dir2/CMakeFiles/RunFunctions.dir/all: Sub_Dir1/CMakeFiles/Sub_Dir1Lib.dir/all
 	$(MAKE) -f Sub_Dir2/CMakeFiles/RunFunctions.dir/build.make Sub_Dir2/CMakeFiles/RunFunctions.dir/depend
 	$(MAKE) -f Sub_Dir2/CMakeFiles/RunFunctions.dir/build.make Sub_Dir2/CMakeFiles/RunFunctions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=5,6 "Built target RunFunctions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/username/repos/cmake-sandbox/build/CMakeFiles --progress-num=7,8 "Built target RunFunctions"
 .PHONY : Sub_Dir2/CMakeFiles/RunFunctions.dir/all
 
 # Include target in all.

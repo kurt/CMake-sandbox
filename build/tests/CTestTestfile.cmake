@@ -7,3 +7,4 @@
 add_test(FunctionCall "FunctionCallExe")
 add_test(PurposefulFail "TestFailExe")
 add_test(AssertTest "TestAssertExe")
+add_test(BoostTests "BoostTestsExe")

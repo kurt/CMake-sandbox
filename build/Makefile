@@ -174,6 +174,19 @@ FunctionCallExe/fast:
 .PHONY : FunctionCallExe/fast
 
 #=============================================================================
+# Target rules for targets named BoostTestsExe
+
+# Build rule for target.
+BoostTestsExe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BoostTestsExe
+.PHONY : BoostTestsExe
+
+# fast build rule for target.
+BoostTestsExe/fast:
+	$(MAKE) -f tests/CMakeFiles/BoostTestsExe.dir/build.make tests/CMakeFiles/BoostTestsExe.dir/build
+.PHONY : BoostTestsExe/fast
+
+#=============================================================================
 # Target rules for targets named TestAssertExe
 
 # Build rule for target.
@@ -279,6 +292,7 @@ help:
 	@echo "... run-main"
 	@echo "... TestFailExe"
 	@echo "... FunctionCallExe"
+	@echo "... BoostTestsExe"
 	@echo "... TestAssertExe"
 	@echo "... Sub_Dir1Lib"
 	@echo "... RunFunctions"
