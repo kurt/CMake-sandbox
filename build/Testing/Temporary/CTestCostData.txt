@@ -1,7 +1,6 @@
-FunctionCall 12 0.000121176
+FunctionCall 18 8.68903e-05
 PurposefulFail 0 0
 AssertTest 2 0
-BoostTests 3 0.000799338
+BoostTests 7 0.000345707
+RunFunctionsTest 4 0.000475466
 ---
-PurposefulFail
-AssertTest
