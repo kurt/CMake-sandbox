@@ -1,0 +1,12 @@
+
+#Ctest commands:
+
+ctest -T memcheck # does memcheck on all tests
+
+ctest -T coverage # prints coverage of code based on tests ran
+
+ctest -T memcheck -R "TestName" # runs the memcheck on test TestName
+
+ctest -O ctest_output.txt # logs the output of the test runs
+
+# memcheck logs are in /build/Testing/Temporary
