@@ -5,6 +5,7 @@ Things that are done here:
 - Running Tests with ctest
 - linking headers to source 
 - linking libraries from different folders
+- install and using libraries in other folders "/testinclude" and "/testlib"
 
 _______________________________________________________
 

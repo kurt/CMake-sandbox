@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -O3 -Wall -fprofile-arcs -ftest-coverage   CMakeFiles/run-main.dir/Main.cpp.o  -o run-main  -L/home/username/repos/cmake-sandbox/c_use_install_library/build/res -lSHARED -lInstalled-Library -Wl,-rpath,/home/username/repos/cmake-sandbox/c_use_install_library/build/res 

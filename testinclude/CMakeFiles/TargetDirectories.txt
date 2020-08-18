@@ -1,0 +1,3 @@
+/home/username/repos/cmake-sandbox/testinclude/CMakeFiles/edit_cache.dir
+/home/username/repos/cmake-sandbox/testinclude/CMakeFiles/testInclude.dir
+/home/username/repos/cmake-sandbox/testinclude/CMakeFiles/rebuild_cache.dir

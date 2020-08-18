@@ -1,0 +1,4 @@
+/usr/local/include/testLib.h
+/usr/local/lib/cmake/testLib/testLibTargets.cmake
+/usr/local/lib/cmake/testLib/testLibConfig.cmake
+/usr/local/lib/cmake/testLib/testLibConfigVersion.cmake

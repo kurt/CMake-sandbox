@@ -1,0 +1,4 @@
+/home/username/repos/cmake-sandbox/c_use_install_library/build/CMakeFiles/edit_cache.dir
+/home/username/repos/cmake-sandbox/c_use_install_library/build/CMakeFiles/test.dir
+/home/username/repos/cmake-sandbox/c_use_install_library/build/CMakeFiles/run-main.dir
+/home/username/repos/cmake-sandbox/c_use_install_library/build/CMakeFiles/rebuild_cache.dir
