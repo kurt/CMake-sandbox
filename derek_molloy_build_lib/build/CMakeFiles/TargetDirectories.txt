@@ -1,0 +1,7 @@
+/home/username/repos/cmake-sandbox/derek_molloy_build_lib/build/CMakeFiles/install.dir
+/home/username/repos/cmake-sandbox/derek_molloy_build_lib/build/CMakeFiles/list_install_components.dir
+/home/username/repos/cmake-sandbox/derek_molloy_build_lib/build/CMakeFiles/rebuild_cache.dir
+/home/username/repos/cmake-sandbox/derek_molloy_build_lib/build/CMakeFiles/edit_cache.dir
+/home/username/repos/cmake-sandbox/derek_molloy_build_lib/build/CMakeFiles/install/local.dir
+/home/username/repos/cmake-sandbox/derek_molloy_build_lib/build/CMakeFiles/testStudent.dir
+/home/username/repos/cmake-sandbox/derek_molloy_build_lib/build/CMakeFiles/install/strip.dir
