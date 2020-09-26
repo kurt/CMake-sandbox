@@ -1,0 +1,9 @@
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/list_install_components.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/install.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/rebuild_cache.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/package.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/install/strip.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/packageStudent.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/install/local.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/package_source.dir
+/home/username/repos/cmake-sandbox/make_a_package/build/CMakeFiles/edit_cache.dir
